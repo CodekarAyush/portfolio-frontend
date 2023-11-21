@@ -27,7 +27,7 @@ if (!form.userName || !form.message || !form.email) {
 }
 else{
   try {
-    const mail = await axios.post('http://localhost:8080/api/mail',{form})
+    const mail = await axios.post('https://ayushgautam.onrender.com/api/mail',{form})
     console.log(mail);
     toast.success(mail.data.message)
     setForm({
